@@ -1,12 +1,10 @@
 body{
-    /* background-color: rgb(241, 241, 241); */
     margin: 0;
     padding: 2% 10%;
     background-image: url("../Images/background.png");
 }
 
 header{
-    /* position: sticky; */
     height: 10%;
     display: flex;
     justify-content: space-between;
