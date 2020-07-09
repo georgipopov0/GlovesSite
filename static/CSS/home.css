@@ -1,0 +1,35 @@
+
+.gloves-info{
+    margin-top: 3%;
+    /* display: flex; */
+}
+
+.gloves-info header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(18, 138, 218);
+    font-size: 2em;
+    font: bold;
+    font-family: Optima;
+}
+
+.gloves-info article{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.paragraph img{
+    width: 5em;
+    height: 6em;
+    margin-right: 1em;
+}

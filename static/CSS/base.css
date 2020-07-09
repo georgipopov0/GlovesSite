@@ -2,9 +2,10 @@ body{
     margin: 0;
     padding: 2% 10%;
     background-image: url("../Images/background.png");
+    overflow: auto;
 }
 
-header{
+#header-top{
     height: 10%;
     display: flex;
     justify-content: space-between;
@@ -18,12 +19,12 @@ header{
     align-items: center;
 }
 
-header img{
+#header-top img{
     height: 3em;
     margin-left: 5%;
 }
 
-header h1{
+#header-top h1{
     font-size: 3em;
     color: rgb(18, 138, 218);
 }

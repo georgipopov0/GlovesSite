@@ -2,15 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/CSS/base.css">
     {% if title %}
-        <title>{{ title }}</title>
+    <title>{{ title }}</title>
     {% else %}
-        <title>Gloves</title>
+    <title>Gloves</title>
     {% endif %}
+    <link rel="stylesheet" type="text/css" href="../static/CSS/base.css">
+    {% block headEnd %} {% endblock %}
 </head>
 <body>
-    <header>
+    <header id = "header-top">
         <div id="logo">
             <img src='../static/Images/logo.jfif' alt="logo">
             <h1>Gloves</h1>
