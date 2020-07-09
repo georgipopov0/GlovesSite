@@ -1,3 +1,27 @@
-h2{
-    color: green;
+section{
+    /* margin-top: 3%; */
+}
+
+section header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(18, 138, 218);
+    font-size: 2em;
+}
+
+.articles-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles-container p{
+    margin: 1em;
+}
+
+.articles-container article{
+    margin: 2em;
+    border: 0.5em solid rgb(18, 138, 218);
+    background-color: white;
 }

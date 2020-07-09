@@ -10,8 +10,6 @@
     align-items: center;
     color: rgb(18, 138, 218);
     font-size: 2em;
-    font: bold;
-    font-family: Optima;
 }
 
 .gloves-info article{
@@ -25,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .paragraph img{
