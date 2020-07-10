@@ -5,5 +5,14 @@
 {% endblock headEnd %}
 
 {% block content %}
-    <h2>Gloves</h2>
+    <section class="gloves-container">
+    {% for glove in gloves %}
+        <div class="glove-wrapper">
+            <p>{{ glove.gloveName }}</p>
+            <a href="glove/{{ glove.gloveName }}">
+            <img src="http://127.0.0.1:5000//glove/img/{{ glove.gloveName }}" alt="{{ glove.gloveName }}">
+            </a>
+        </div>
+        {% endfor %}
+    </section>
 {% endblock content %}

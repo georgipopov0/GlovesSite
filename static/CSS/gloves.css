@@ -1,3 +1,28 @@
-h2{
-    color: red;
+.gloves-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
 }
+
+.glove-wrapper{
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+    background-color: white;
+    border: 0.1em solid rgb(18, 138, 218);
+}
+
+.glove-wrapper img{ 
+    width: 100%;
+    max-height: 21em;
+}
+
+.glove-wrapper p{
+    text-align: center;
+    border-bottom: 0.1em solid rgb(18, 138, 218);
+    font-size: 2em;
+    margin: 1%;
+
+}
+

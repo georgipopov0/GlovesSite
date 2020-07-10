@@ -25,6 +25,10 @@ body{
     margin-left: 5%;
 }
 
+a{
+    text-decoration: none;
+}
+
 #header-top h1{
     font-size: 3em;
     color: rgb(18, 138, 218);

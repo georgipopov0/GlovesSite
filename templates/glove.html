@@ -5,5 +5,21 @@
 {% endblock headEnd %}
 
 {% block content %}
-    <h2>Glove</h2>
+    <section class="glove-wrapper">
+    <img src="http://127.0.0.1:5000//glove/img/{{ glove.gloveName }}" alt="{{ glove.gloveName }}">
+        <div class="info-wrapper">
+            <div>
+                <p>{{ glove.gloveName }}</p>
+            </div>
+            <div>
+                <p>Description:<br>{{ glove.gloveDescription }}</p>
+            </div>
+            <div>
+                <p>{{ glove.glovePrice }}$</p>
+            </div>
+            <div>
+            <p>{{ glove.gloveType }}</p>
+            </div>
+        </div>
+    </section>
 {% endblock content %}
