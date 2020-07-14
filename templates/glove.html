@@ -6,19 +6,20 @@
 
 {% block content %}
     <section class="glove-wrapper">
-    <img src="http://127.0.0.1:5000//glove/img/{{ glove.gloveName }}" alt="{{ glove.gloveName }}">
+        <img src="http://127.0.0.1:5000//glove/img/{{ glove.gloveName }}" alt="{{ glove.gloveName }}">
         <div class="info-wrapper">
-            <div>
-                <p>{{ glove.gloveName }}</p>
+            <p id="glove-name">{{ glove.gloveName }}</p>
+            <div class="glove-attribute">
+                <p class="attribute-title">Description:</p>
+                <p>{{ glove.gloveDescription }}</p>
             </div>
-            <div>
-                <p>Description:<br>{{ glove.gloveDescription }}</p>
+            <div class="glove-attribute"e>
+                <span class="attribute-title">price:</span>
+                <span>{{ glove.glovePrice }}$</span>
             </div>
-            <div>
-                <p>{{ glove.glovePrice }}$</p>
-            </div>
-            <div>
-            <p>{{ glove.gloveType }}</p>
+            <div class="glove-attribute">
+                <span class="attribute-title">Type:</span>
+                <span>{{ glove.gloveType }}</span>
             </div>
         </div>
     </section>

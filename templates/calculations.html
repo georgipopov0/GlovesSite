@@ -5,5 +5,34 @@
 {% endblock headEnd %}
 
 {% block content %}
-    <h2>Calculator</h2>
+    <div class="content">
+        <div class = matsCalculator>
+            <div id="headingWrapper">
+                <h2>Matinal calculator</h2>
+            </div>
+            <form>
+                <label for="amount input"> Amount:</label>
+                <input type="text" id="calculatorInput">
+            </form>
+
+            <form >
+                <div>
+                    <label for="gloves size"> Size:</label>
+                    <span id="demo"></span>
+                </div>
+                <input type="range" min="0" max="5" value="3" id="myRange">
+            </form>
+
+                <form>
+                    <label for="Gloves">Choose a Glove:</label>
+                    <select id="gloves" name="gloves">
+                    </select>
+                </form>
+                <button type="button" id="calculationTrigger"> Press me! </button>
+                <div id="resultWrapper">
+                    <p id="result"> 0 M²</p>
+                </div>
+        </div>
+    </div>
+    <script src="../static/JS/calculator.js"></script>
 {% endblock content %}

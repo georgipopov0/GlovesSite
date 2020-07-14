@@ -2,8 +2,12 @@ p {
     margin: 0;
 }
 
+span{
+    margin: 0;
+}
+
 .glove-wrapper{
-    margin: 5%;
+    margin: 10% 10%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -12,23 +16,31 @@ p {
     background-color: white
 }
 
-
 .glove-wrapper img{
-    /* width: 100%; */
-    /* max-width: 3em; */
+    width: 100%;
+    max-width: 20em;
     border-right: 0.1em solid rgb(18, 138, 218);
-    margin-right: 1%;
+    margin-right: 3%;
 }
 
 .info-wrapper{
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; 
     align-items: flex-start;
 }
- 
-.description-element {
-    margin: 4%;
-} 
 
+#glove-name{
+    font-size: 2.5em;
+    color: rgb(23, 124, 192);
+}
+
+.glove-attribute{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4% 1% 4% 0;
+
+}
+
+.attribute-title{
+    color: rgb(105, 105, 105);
+}

@@ -1,3 +1,59 @@
-h2{
-    color: yellowgreen;
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.matsCalculator{
+    width: 30%;
+    height: 30em;
+    border: medium solid  rgb(18, 138, 218);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+#headingWrapper{
+    text-align: center;
+}
+
+form {
+    margin: 6% 5%;
+    margin-left: 15%;
+}
+
+#calculatorInput{
+    border: none;
+    border-bottom: thin solid black ;
+}
+
+
+#calculatorInput:focus{
+    outline: none;
+    border-bottom: medium solid black ;
+}
+
+#myRange{
+    width: 75%;
+}
+
+#calculationTrigger{
+    width: 30%;
+    height: 10%;
+    margin: 5% auto 5% auto;
+}
+
+#resultWrapper{
+    border-top: medium solid  rgb(18, 138, 218);
+    width: 100%;
+    height: 100%;
+    text-align: center ;
+}
+
+#result{
+    font-size: 2.5em;
 }

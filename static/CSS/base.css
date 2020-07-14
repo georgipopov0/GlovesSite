@@ -11,7 +11,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-
+    margin-bottom: 3%;
 }
 
 #logo{
@@ -35,7 +35,6 @@ a{
 }
 
 #nav-links{ 
-    /* border-bottom: solid thin rgb(18, 138, 218) ; */
     width: 40%;
 }
 
@@ -44,7 +43,6 @@ a{
     color: rgb(18, 138, 218);
     font-weight: bold;
     margin: 0 1%;
-    /* height: 5%; */
     font-size: 2em;
 }
 

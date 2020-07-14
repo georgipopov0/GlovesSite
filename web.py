@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, jsonify
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
@@ -46,6 +46,21 @@ def serve_img(type):
     type += ".jpg"
     return send_from_directory("local_resources", type, as_attachment=False)
 
+@app.route("/glovesInfo/names")
+def getGlovesNames():
+    cur = mysql.connection.cursor()
+    cur.execute('''SELECT gloveName FROM gloves.gloves
+                    order by gloveName;''')
+    gloves = cur.fetchall()
+    return jsonify(gloves)
 
+@app.route("/glovesInfo/materialNeeded/<glove>")
+def getMaterialNeeded(glove):
+        cur = mysql.connection.cursor()
+        cur.execute('''SELECT gloveMaterialNeeded FROM gloves.gloves
+where gloveName = "{}";'''.format(glove))
+
+        materialNeeded = cur.fetchone()
+        return jsonify(materialNeeded)
 if __name__ == '__main__':
     app.run(debug=True)
