@@ -1,5 +1,6 @@
 use Gloves;
 drop table Gloves;
+
 create table Gloves(
 	gloveName varchar(64),
     gloveDescription varchar(1024),
