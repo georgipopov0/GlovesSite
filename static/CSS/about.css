@@ -9,15 +9,18 @@ section header{
 .articles-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .articles-container p{
-    margin: 1em;
+    margin: 1em 2em;
 }
 
 .articles-container article{
     margin: 2em;
     border: 0.5em solid rgb(18, 138, 218);
     background-color: white;
+    width: 50% ;
+    height: 28em;
+    font-size: 1.3em;
 }
